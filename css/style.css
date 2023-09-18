@@ -237,6 +237,35 @@ body{
 .more:hover{
     background-color: rgba(0, 0, 0, 0.771);
 }
+.b-scroll{
+    width: 100%;
+    height: 350px;
+}
+.b-scroll-item{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    flex-shrink: 3;
+    gap: 24px;
+}
+.b-scroll-item::-webkit-scrollbar{
+    display: none;
+}
+.b-scroll-list{
+    width: 620px;
+    height: 350px;
+    transition: .4s;
+}
+.b-scroll-list:hover{
+    transform: scale(1.3);
+    /* margin: 0 34px; */
+}
+.b-scroll-list img{
+    width: 620px;
+    overflow: hidden;
+    object-fit: contain;
+    background-position: 100% 100%;
+}
 .scroll{
     width: 100%;
     display: flex;
